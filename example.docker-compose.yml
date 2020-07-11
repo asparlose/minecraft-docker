@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  server:
+    build:
+      context: ./
+    volumes: 
+      - ./server-data:/root/server-data
+    ports:
+      - 25565:25565
